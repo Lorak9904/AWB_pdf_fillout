@@ -1,0 +1,68 @@
+{
+    "AWB_Number": "001-12345678",
+    "Shipper": {
+      "Name": "CABLE AND STEEL COMPANY",
+      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USA",
+      "Phone": "555 55 55",
+      "Account_Number": "ABC123456"
+    },
+    "Consignee": {
+      "Name": "CABLE BIG STORE",
+      "Address": "4321, ROGERS STREET, LONDON, ENGLAND",
+      "Phone": "555 12 34"
+    },
+    "Issuing_Carrier": {
+      "Name": "BOND STUFF FORWARDERS",
+      "Address": "QUEEN STREET 7, LONDON, ENGLAND",
+      "Phone": "555 55 12"
+    },
+    "Agent_IATA_Code": "AA",
+    "Agent_Account_No": "11-1 00000",
+    "Airport_Departure": "NEW YORK CITY",
+    "Airport_Destination": "HEATHROW",
+    "Flight_Data": "AA1234/12",
+    "Reference_Number": "REF-987654321",
+    "Currency": "USD",
+    "CHGS": "PP",
+    "WT/VAL": {
+      "PPD": "X",
+      "COLL": ""
+    },
+    "OTHER": {
+      "PPD": "X",
+      "COLL": ""
+    },
+    "Declared_Value_For_Carriage": "X",
+    "Declared_Value_For_Customs": "X",
+    "Accounting_Information": "XYZ XYZ QWERTY",
+    "Handling_Information": "Diversion contrary to U.S. law prohibited.",
+    "Shipment": [
+      {
+        "No_of_Pieces": 2,
+        "RCP": 324,
+        "Rate_Class": "K",
+        "Weight": 324.00,
+        "Charge": 1234.00,
+        "Nature_of_Goods": "SOME ITEMS"
+      }
+    ],
+    "Prepaid_Weight_Charge": 1234.00,
+    "Valuation_Charge": 0.00,
+    "Tax": 0.00,
+    "Total_Other_Charges_Due_Agent": 0.00,
+    "Total_Other_Charges_Due_Carrier": 0.00,
+    "Total_Prepaid": 1234.00,
+    "Total_Collect": 1234.00,
+    "Currency_Conversion_Rate": 1.00,
+    "CC_Charges_Destination_Currency": 0.00,
+    "Executed_On": {
+      "Date": "2025-02-27",
+      "Place": "New York"
+    },
+    "Shipper_Certification": "Shipper certifies that the particulars on the face hereof are correct and that insofar as any part of the consignment contains dangerous goods, such part is properly described by name and is in proper condition for carriage by air according to the applicable Dangerous Goods Regulations.",
+    "Signatures": {
+      "Shipper": "Signature of Shipper or his Agent",
+      "Issuer": "Signature of Issuing Carrier or its Agent"
+    },
+    "Original_Copy": "FOR ISSUING CARRIER"
+  }

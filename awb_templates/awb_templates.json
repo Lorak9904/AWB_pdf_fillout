@@ -1,0 +1,69 @@
+{
+    "AWB_Number": "",
+    "Shipper": {
+      "Name": "",
+      "Address": "",
+      "Phone": "",
+      "Account_Number": ""
+    },
+    "Consignee": {
+      "Name": "",
+      "Address": "",
+      "Phone": ""
+    },
+    "Issuing_Carrier": {
+      "Name": "",
+      "Address": "",
+      "Phone": ""
+    },
+    "Agent_IATA_Code": "",
+    "Agent_Account_No": "",
+    "Airport_Departure": "",
+    "Airport_Destination": "",
+    "Flight_Data": "",
+    "Reference_Number": "",
+    "Currency": "",
+    "CHGS": "",
+    "WT/VAL": {
+      "PPD": "",
+      "COLL": ""
+    },
+    "OTHER": {
+      "PPD": "",
+      "COLL": ""
+    },
+    "Declared_Value_For_Carriage": "",
+    "Declared_Value_For_Customs": "",
+    "Accounting_Information": "",
+    "Handling_Information": "",
+    "Shipment": [
+      {
+        "No_of_Pieces": "",
+        "RCP": "",
+        "Rate_Class": "",
+        "Weight": "",
+        "Charge": "",
+        "Nature_of_Goods": ""
+      }
+    ],
+    "Prepaid_Weight_Charge": "",
+    "Valuation_Charge": "",
+    "Tax": "",
+    "Total_Other_Charges_Due_Agent": "",
+    "Total_Other_Charges_Due_Carrier": "",
+    "Total_Prepaid": "",
+    "Total_Collect": "",
+    "Currency_Conversion_Rate": "",
+    "CC_Charges_Destination_Currency": "",
+    "Executed_On": {
+      "Date": "",
+      "Place": ""
+    },
+    "Shipper_Certification": "",
+    "Signatures": {
+      "Shipper": "",
+      "Issuer": ""
+    },
+    "Original_Copy": ""
+  }
+  
