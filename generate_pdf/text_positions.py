@@ -6,6 +6,7 @@ class TextPositions:
     text_positions = {
     "AWB_Number": (70, 20),
     "Shipper_Name": (65, 60),
+    # split into multiple lines
     "Shipper_Address": (65, 70),
     "Shipper_Phone": (65, 80),
     "Shipper_Account_Number": (225, 50),
@@ -18,6 +19,12 @@ class TextPositions:
     "Agent_IATA_Code": (65, 240),
     "Agent_Account_No": (200, 240),
     "Airport_Departure": (65, 265),
+    "Routing_Destination_TO": (65, 285),
+    "Routing_Destination_By_First_Carrier": (90, 285),
+    "Routing_Destination_to": (217, 285),
+    "Routing_Destination_by": (247, 285),
+    "Routing_Destination_to_2": (270, 285),
+    "Routing_Destination_by_2": (297, 285),
     "Airport_Destination": (65, 310),
     "Flight_Data": (200, 310),
     "Reference_Number": (320, 265),

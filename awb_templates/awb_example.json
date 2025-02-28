@@ -2,7 +2,7 @@
     "AWB_Number": "001-12345678",
     "Shipper": {
       "Name": "CABLE AND STEEL COMPANY",
-      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USA",
+      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "Phone": "555 55 55",
       "Account_Number": "ABC123456"
     },
@@ -31,6 +31,14 @@
     "OTHER": {
       "PPD": "X",
       "COLL": ""
+    },
+    "ROUTING_DESTINATION": {
+      "TO": "LHR",
+      "By_First_Carrier": "XYZXYZXYZXYZXYZXYZ",
+      "to": "CWKS",
+      "by": "LPG",
+      "to_2": "HWDP",
+      "by_2": "LOL"
     },
     "Declared_Value_For_Carriage": "X",
     "Declared_Value_For_Customs": "X",

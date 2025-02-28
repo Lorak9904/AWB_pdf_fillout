@@ -1,6 +1,7 @@
 import json
 import fitz
 from text_positions import TextPositions
+from utils import wrap_text
 
 # TODO:
 # scaling, fonts, length optimization
@@ -43,6 +44,12 @@ class PDFPopulator:
         page.insert_text(self.text_positions["Agent_Account_No"], awb_data["Agent_Account_No"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Accounting_Information"], awb_data["Accounting_Information"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Airport_Departure"], awb_data["Airport_Departure"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_TO"], awb_data["ROUTING_DESTINATION"]["TO"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_By_First_Carrier"], awb_data["ROUTING_DESTINATION"]["By_First_Carrier"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_to"], awb_data["ROUTING_DESTINATION"]["to"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_by"], awb_data["ROUTING_DESTINATION"]["by"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_to_2"], awb_data["ROUTING_DESTINATION"]["to_2"], fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Routing_Destination_by_2"], awb_data["ROUTING_DESTINATION"]["by_2"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Airport_Destination"], awb_data["Airport_Destination"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Flight_Data"], awb_data["Flight_Data"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Currency"], awb_data["Currency"], fontsize=self.fontsize, color=self.color)

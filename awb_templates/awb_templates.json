@@ -32,6 +32,14 @@
       "PPD": "",
       "COLL": ""
     },
+    "ROUTING_DESTINATION": {
+      "TO": "",
+      "By_First_Carrier": "",
+      "to": "",
+      "by": "",
+      "to_2": "",
+      "by_2": ""
+    },
     "Declared_Value_For_Carriage": "",
     "Declared_Value_For_Customs": "",
     "Accounting_Information": "",
