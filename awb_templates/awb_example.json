@@ -2,18 +2,18 @@
     "AWB_Number": "001-12345678",
     "Shipper": {
       "Name": "CABLE AND STEEL COMPANY",
-      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "Phone": "555 55 55",
       "Account_Number": "ABC123456"
     },
     "Consignee": {
       "Name": "CABLE BIG STORE",
-      "Address": "4321, ROGERS STREET, LONDON, ENGLAND",
+      "Address": "4321, ROGERS STREET, LONDON, ENGLAND, dddddddddddddddddddddddddddddddddddddddddddddddddddd",
       "Phone": "555 12 34"
     },
     "Issuing_Carrier": {
       "Name": "BOND STUFF FORWARDERS",
-      "Address": "QUEEN STREET 7, LONDON, ENGLAND",
+      "Address": "QUEEN STREET 7, LONDON, ENGLAND, fdh8grehgeuhgerghghregh9erhg9heg98ehger89hgre89ghghergh89gerh9g",
       "Phone": "555 55 12"
     },
     "Agent_IATA_Code": "AA",

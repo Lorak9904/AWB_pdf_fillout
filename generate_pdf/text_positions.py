@@ -15,7 +15,7 @@ class TextPositions:
     "Consignee_Phone": (65, 150),
     "Issuing_Carrier_Name": (65, 195),
     "Issuing_Carrier_Address": (65, 205),
-    "Issuing_Carrier_Phone": (65, 215),
+    "Issuing_Carrier_Phone": (65, 210),
     "Agent_IATA_Code": (65, 240),
     "Agent_Account_No": (200, 240),
     "Airport_Departure": (65, 265),
