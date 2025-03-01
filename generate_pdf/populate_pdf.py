@@ -13,7 +13,7 @@ class PDFPopulator:
         self.output_pdf_path: str = output_pdf_path
         self.json_path: str = json_path
         self.text_positions = TextPositions().text_positions
-        self.address_formatter = None
+        self.address_formatter = None # initialized in fill_pdf() method
         self.fontsize = 6
         self.color = (0, 0, 0)
     
