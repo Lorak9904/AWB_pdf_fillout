@@ -37,5 +37,7 @@ class TextPositions:
     "Declared_Value_For_Carriage": (425, 290),
     "Declared_Value_For_Customs": (510, 290),
     "Handling_Information": (61, 333),
-    # TODO: shipment data?
+    
+    "Shipment_Table_Start_X": 65,
+    "Shipment_Table_Start_Y": 400
 }
