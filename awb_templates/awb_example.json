@@ -42,8 +42,8 @@
     },
     "Declared_Value_For_Carriage": "X",
     "Declared_Value_For_Customs": "X",
-    "Accounting_Information": "XYZ XYZ QWERTY",
-    "Handling_Information": "Diversion contrary to U.S. law prohibited.",
+    "Accounting_Information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nisi nunc. Nunc quis ante congue, pharetra lorem in, vestibulum lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu nisi in elit elementum ultricies. Nam vehicula quam id ante lobortis, eget maximus dolor vulputate. Praesent cursus finibus ante, ac malesuada lorem sollicitudin a. Aliquam justo urna, finibus nec arcu eget, finibus pulvinar ligula. Cras consequat ligula urna. Vestibulum quis facilisis nunc, vel sollicitudin justo. Sed in eros eu est molestie gravida ut id ex. Vestibulum pretium laoreet nisi et rhoncus. Nullam felis risus, commodo vel nibh lacinia, ornare vestibulum diam. Ut eget augue nunc.",
+    "Handling_Information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nisi nunc. Nunc quis ante congue, pharetra lorem in, vestibulum lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu nisi in elit elementum ultricies. Nam vehicula quam id ante lobortis, eget maximus dolor vulputate. Praesent cursus finibus ante, ac malesuada lorem sollicitudin a. Aliquam justo urna, finibus nec arcu eget, finibus pulvinar ligula. Cras consequat ligula urna. Vestibulum quis facilisis nunc, vel sollicitudin justo. Sed in eros eu est molestie gravida ut id ex. Vestibulum pretium laoreet nisi et rhoncus. Nullam felis risus, commodo vel nibh lacinia, ornare vestibulum diam. Ut eget augue nunc.",
     "Shipment": [
       {
         "No_of_Pieces": 2,
