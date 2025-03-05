@@ -97,7 +97,6 @@ class PDFPopulator:
             page.insert_text((base_x + 370, y_offset), nature_goods, fontsize=self.fontsize, color=self.color)
 
 
-
 # example usage
 template_path = "../awb_templates/awb_template.pdf"
 output_pdf_path = "filled_awb.pdf"
