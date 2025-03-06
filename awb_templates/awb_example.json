@@ -1,8 +1,13 @@
 {
-    "AWB_Number": "001-12345678",
+    "AWB_Number1": {
+      "Line1": "001",
+      "Line2": "NYC",
+      "Line3": "12345678"
+    },
+    "AWB_Number2": "001-12345678",
     "Shipper": {
       "Name": "CABLE AND STEEL COMPANY",
-      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "Address": "1234, INDUSTRIAL STREET, NEW YORK, USAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafdffffffffffffffffffffffffffffffffffffffffffff, 00-12334, fffffffffffffffffffffffffffffffffffff",
       "Phone": "555 55 55",
       "Account_Number": "ABC123456"
     },
@@ -63,6 +68,7 @@
     "Total_Collect": 1234.00,
     "Currency_Conversion_Rate": 1.00,
     "CC_Charges_Destination_Currency": 0.00,
+    "Other_Charges": "Lorem ipsum dolor st amet, consectetur adipiscing elit. Aliquam ut nisi nunc. Nunc quis ante congue, pharetra lorem in, vestibulum lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu nisi in elit elementum ultricies. Nam vehicula quam id ante lobortis, eget maximus dolor vulputate. Praesent cursus finibus ante, ac malesuada lorem sollicitudin a. Aliquam justo urna, finibus nec arcu eget, finibus pulvinar ligula. Cras consequat ligula urna. Vestibulum quis facilisis nunc, vel sollicitudin justo. Sed in eros eu est molestie gravida ut id ex. Vestibulum pretium laoreet nisi et rhoncus. Nullam felis risus, commodo vel nibh lacinia, ornare vestibulum diam. Ut eget augue nunc.",
     "Executed_On": {
       "Date": "2025-02-27",
       "Place": "New York"

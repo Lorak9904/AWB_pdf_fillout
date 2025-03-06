@@ -4,7 +4,8 @@ from text_positions import TextPositions
 from format import Formatter
 
 # TODO:
-# unit tests
+# integration tests on multiple json files
+# shipment table formatting
 
 class PDFPopulator:
     def __init__(self, template_path: str, output_pdf_path: str, awb_data_path: str, shipment_table_path: str) -> None:
@@ -13,11 +14,11 @@ class PDFPopulator:
         self.awb_data: str = awb_data_path
         self.shipment_table: str = shipment_table_path
         self.text_positions = TextPositions().text_positions
-        self.formatter = None # initialized in fill_pdf() method
+        self.formatter = None # Formatter class instance
         self.fontsize = 6
         self.color = (0, 0, 0)
     
-    # json_to_open: path to json file (awb data or shipment table)
+    # loads awb data or shipment table
     def load_data(self, json_to_open: str) -> dict:
         with open(json_to_open, "r") as f:
             return json.load(f)
@@ -28,14 +29,20 @@ class PDFPopulator:
         doc = fitz.open(self.template_path)
         page = doc[0]
 
-        page.insert_text(self.text_positions["AWB_Number"], awb_data["AWB_Number"], fontsize=self.fontsize, color=self.color)
+        # awb numbers, two variants
+        page.insert_text(self.text_positions["AWB_Number1.1"], awb_data["AWB_Number1"]["Line1"], fontsize=self.fontsize + 3, color=self.color)
+        page.insert_text(self.text_positions["AWB_Number1.2"], awb_data["AWB_Number1"]["Line2"], fontsize=self.fontsize + 3, color=self.color)
+        page.insert_text(self.text_positions["AWB_Number1.3"], awb_data["AWB_Number1"]["Line3"], fontsize=self.fontsize + 3, color=self.color)
+        
+        page.insert_text(self.text_positions["AWB_Number2"], awb_data["AWB_Number2"], fontsize=self.fontsize + 3, color=self.color)
 
-        # formatable data insertion
+        # formatting-required data
         self.formatter.format_data(awb_data, page, "Shipper")
         self.formatter.format_data(awb_data, page, "Consignee")
         self.formatter.format_data(awb_data, page, "Issuing_Carrier")
         self.formatter.format_text_block(awb_data, page, "Accounting_Information")
         self.formatter.format_text_block(awb_data, page, "Handling_Information", 170, 4)
+        self.formatter.format_text_block(awb_data, page, "Other_Charges")
 
         # additional formatting not required
         page.insert_text(self.text_positions["Agent_IATA_Code"], awb_data["Agent_IATA_Code"], fontsize=self.fontsize, color=self.color)
@@ -59,20 +66,31 @@ class PDFPopulator:
         page.insert_text(self.text_positions["Declared_Value_For_Carriage"], awb_data["Declared_Value_For_Carriage"], fontsize=self.fontsize, color=self.color)
         page.insert_text(self.text_positions["Declared_Value_For_Customs"], awb_data["Declared_Value_For_Customs"], fontsize=self.fontsize, color=self.color)
 
+        # shipment table
         self.fill_shipment_table(doc[0])
+
+        # below shipment table
+        page.insert_text(self.text_positions["Prepaid_Weight_Charge"], str(awb_data["Prepaid_Weight_Charge"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Valuation_Charge"], str(awb_data["Valuation_Charge"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Tax"], str(awb_data["Tax"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Total_Other_Charges_Due_Agent"], str(awb_data["Total_Other_Charges_Due_Agent"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Total_Other_Charges_Due_Carrier"], str(awb_data["Total_Other_Charges_Due_Carrier"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Total_Prepaid"], str(awb_data["Total_Prepaid"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Total_Collect"], str(awb_data["Total_Collect"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["Currency_Conversion_Rate"], str(awb_data["Currency_Conversion_Rate"]), fontsize=self.fontsize, color=self.color)
+        page.insert_text(self.text_positions["CC_Charges_Destination_Currency"], str(awb_data["CC_Charges_Destination_Currency"]), fontsize=self.fontsize, color=self.color)
+
 
         doc.save(self.output_pdf_path)
         doc.close()
     
     def fill_shipment_table(self, doc):
         shipment_data = self.load_data(self.shipment_table)
-        # doc = fitz.open(self.template_path)
         page = doc
 
-        # Define starting position (adjust based on PDF template)
         base_x = self.text_positions["Shipment_Table_Start_X"]
         base_y = self.text_positions["Shipment_Table_Start_Y"]
-        row_height = 10  # Adjust based on PDF row spacing
+        row_height = 10
 
         for index, item in enumerate(shipment_data["shipmentTable"]):
             y_offset = base_y + (index * row_height)
@@ -95,7 +113,6 @@ class PDFPopulator:
                 nature_goods = nature_goods[:54] + "..."
 
             page.insert_text((base_x + 370, y_offset), nature_goods, fontsize=self.fontsize, color=self.color)
-
 
 # example usage
 template_path = "../awb_templates/awb_template.pdf"

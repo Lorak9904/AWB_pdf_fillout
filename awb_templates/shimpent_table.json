@@ -1,0 +1,18 @@
+{
+    "shipmentTable": [
+      {
+        "noOfPieces": null,
+        "rcp": null,
+        "grossWeight": {
+          "kg": null,
+          "lb": null
+        },
+        "commodity": "",
+        "itemNo": "",
+        "chargeableWeight": null,
+        "rate": null,
+        "total": null,
+        "natureAndQuantityOfGoods": ""
+      }
+    ]
+}

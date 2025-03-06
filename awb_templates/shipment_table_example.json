@@ -1,0 +1,82 @@
+{
+  "shipmentTable": [
+    {
+      "noOfPieces": 5,
+      "rcp": "ABC123",
+      "grossWeight": 77,
+      "k/lb": "K",
+      "rateClass": "M",
+      "commodity": "Electronics",
+      "itemNo": "EL12345",
+      "chargeableWeight": 130,
+      "rate/charge": 5.75,
+      "total": 747.50,
+      "natureAndQuantityOfGoods": "5 boxes of laptops, dimensions 40x30x20 cm each"
+    },
+    {
+      "noOfPieces": 2,
+      "rcp": "XYZ789",
+      "grossWeight": 50,
+      "k/lb": "K",
+      "rateClass": "N",
+      "commodity": "Pharmaceuticals",
+      "itemNo": "PH67890",
+      "chargeableWeight": 55,
+      "rate/charge": 6.50,
+      "total": 357.50,
+      "natureAndQuantityOfGoods": "2 crates of medical supplies, kept at 5°C"
+    },
+    {
+      "noOfPieces": 10,
+      "rcp": "LMN456",
+      "grossWeight": 200,
+      "k/lb": "K",
+      "rateClass": "Q",
+      "commodity": "Furniture",
+      "itemNo": "FUR56789",
+      "chargeableWeight": 210,
+      "rate/charge": 4.25,
+      "total": 892.50,
+      "natureAndQuantityOfGoods": "10 wooden chairs, packed in bubble wrap"
+    },
+    {
+      "noOfPieces": 1,
+      "rcp": "PQR678",
+      "grossWeight": 500,
+      "k/lb": "L",
+      "rateClass": "U",
+      "commodity": "Machinery",
+      "itemNo": "MAC12345",
+      "chargeableWeight": 510,
+      "rate/charge": 7.25,
+      "total": 3707.50,
+      "natureAndQuantityOfGoods": "Industrial drilling machine, secured on a wooden pallet"
+    },
+    {
+      "noOfPieces": 3,
+      "rcp": "STU890",
+      "grossWeight": 30,
+      "k/lb": "K",
+      "rateClass": "C",
+      "commodity": "Clothing",
+      "itemNo": "CLO24680",
+      "chargeableWeight": 35,
+      "rate/charge": 3.80,
+      "total": 133.00,
+      "natureAndQuantityOfGoods": "3 cartons of designer apparel, vacuum-sealed"
+    },
+    {
+      "noOfPieces": 8,
+      "rcp": "VWX901",
+      "grossWeight": 90,
+      "k/lb": "K",
+      "rateClass": "N",
+      "commodity": "Food Items",
+      "itemNo": "FOO97531",
+      "chargeableWeight": 95,
+      "rate/charge": 2.50,
+      "total": 237.50,
+      "natureAndQuantityOfGoods": "8 boxes of perishable frozen goods, temperature-controlled at -18°C"
+    }
+  ]
+}

@@ -1,5 +1,10 @@
 {
-    "AWB_Number": "",
+    "AWB_Number1": {
+      "Line1": "",
+      "Line2": "",
+      "Line3": ""
+    },
+    "AWB_Number2": "",
     "Shipper": {
       "Name": "",
       "Address": "",
@@ -63,6 +68,7 @@
     "Total_Collect": "",
     "Currency_Conversion_Rate": "",
     "CC_Charges_Destination_Currency": "",
+    "Other Charges": "",
     "Executed_On": {
       "Date": "",
       "Place": ""

@@ -1,10 +1,14 @@
 from dataclasses import dataclass
 
-# text positions hardcoded to according to the template (awb_templates/awb_template.py)
+# text positions mapped to according positions
+# in the template (awb_templates/awb_template.py)
 @dataclass
 class TextPositions:
     text_positions = {
-    "AWB_Number": (70, 20),
+    "AWB_Number1.1": (65, 25),
+    "AWB_Number1.2": (92, 25),
+    "AWB_Number1.3": (120, 25),
+    "AWB_Number2": (500, 25),
     "Shipper_Name": (65, 60),
     "Shipper_Address": (65, 70),
     "Shipper_Phone": (65, 80),
@@ -37,6 +41,16 @@ class TextPositions:
     "Declared_Value_For_Carriage": (425, 290),
     "Declared_Value_For_Customs": (510, 290),
     "Handling_Information": (61, 333),
+    "Prepaid_Weight_Charge": (100, 575),
+    "Valuation_Charge": (100, 600),
+    "Tax": (100, 625),
+    "Total_Other_Charges_Due_Agent": (100, 650),
+    "Total_Other_Charges_Due_Carrier": (100, 675),
+    "Total_Prepaid": (100, 720),
+    "Total_Collect": (200, 720),
+    "Currency_Conversion_Rate": (100, 745),
+    "CC_Charges_Destination_Currency": (200, 745),
+    "Other_Charges": (265, 575),
     
     "Shipment_Table_Start_X": 65,
     "Shipment_Table_Start_Y": 400
