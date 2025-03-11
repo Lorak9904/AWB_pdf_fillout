@@ -28,13 +28,11 @@ class Formatter():
         # wrap the address into multiple lines if needed (line exceeds maxlen)
         address_lines = self.wrap_text(awb_data[category]["Address"])
         base_x, base_y = self.text_positions[f"{category}_Address"]
-        base_y -= 5 # 5 pixels higher for padding
+        base_y -= 5
 
         for i, line in enumerate(address_lines):
             page.insert_text((base_x, base_y + (i * self.line_spacing)), line, fontsize=self.fontsize, color=self.color)
-        # calc new-y according to no. lines used
-        last_address_y = base_y + (len(address_lines) * self.line_spacing)  # Last used y pos
-        # adjusted pos for shipper phone
+        last_address_y = base_y + (len(address_lines) * self.line_spacing)
         phone_position = (self.text_positions[f"{category}_Phone"][0], last_address_y)
         page.insert_text(phone_position, awb_data["Shipper"]["Phone"], fontsize=self.fontsize, color=self.color)
         if category == "Shipper":

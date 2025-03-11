@@ -14,7 +14,7 @@ class PDFPopulator:
         self.awb_data: str = awb_data_path
         self.shipment_table: str = shipment_table_path
         self.text_positions = TextPositions().text_positions
-        self.formatter = None # Formatter class instance
+        self.formatter = None # Formatter() class instance
         self.fontsize = 6
         self.color = (0, 0, 0)
     
@@ -107,12 +107,13 @@ class PDFPopulator:
             page.insert_text((base_x + 215, y_offset), f'{item["rate/charge"]}', fontsize=self.fontsize, color=self.color)
             page.insert_text((base_x + 275, y_offset), f'{item["total"]}', fontsize=self.fontsize, color=self.color)
 
-            # for now, the text is truncated if exceeds 57 chars
+            # nature and quantity of goods formatting
             nature_goods = item["natureAndQuantityOfGoods"]
-            if len(nature_goods) > 57:
-                nature_goods = nature_goods[:54] + "..."
+            wrapped_text = self.formatter.wrap_text(nature_goods, max_width=94, max_lines=2)
+            line_spacing = self.fontsize * -0.6
+            for i, line in enumerate(wrapped_text):
+                page.insert_text((base_x + 370, y_offset - (i * line_spacing)), line, fontsize=self.fontsize - 2.5, color=self.color)
 
-            page.insert_text((base_x + 370, y_offset), nature_goods, fontsize=self.fontsize, color=self.color)
 
 # example usage
 template_path = "../awb_templates/awb_template.pdf"
